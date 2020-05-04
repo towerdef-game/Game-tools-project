@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class character : MonoBehaviour
 {
@@ -8,22 +9,26 @@ public class character : MonoBehaviour
     public float speed = 6.0F;
     public float jumpSpeed = 1.0F;
     public float gravity = 20.0F;
-    public static int health = 1;
+    public static int health = 5;
+    
     private Vector3 moveDirection = Vector3.zero;
     public static int ammo = 5;
     public GameObject bullet;
     public GameObject barrel;
     public bool canshoot = true;
     public float rateoffire;
-  //  public GameObject hands;
+    public GameManager gamemanager;
+    TextMeshProUGUI heal;
 
     void Start()
     {
-
-     //   hands = GameObject.Find("hands");
+        
+        heal = GameObject.Find("Health"). GetComponent<TextMeshProUGUI>();
     }
     void Update()
     {
+      
+        heal.text = health.ToString("Health:"+ health);
         if (Input.GetMouseButtonDown(0) && ammo>= 1 && canshoot == true)
         {
             shoot();
@@ -44,10 +49,7 @@ public class character : MonoBehaviour
         if (health <= 0)
         {
             Debug.Log("YOUR DEAD");
-          //  SceneManager.LoadScene("Lose");
-
-          //  SceneManager.UnloadSceneAsync("SampleScene");
-            // SceneManager.LoadSceneAsync("SampleScene", LoadSceneMode.Additive);
+           // gamemanager.WinLevel();
         }
 
         moveDirection.y -= gravity * Time.deltaTime;

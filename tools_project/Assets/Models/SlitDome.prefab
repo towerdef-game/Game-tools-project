@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 557947101127882855}
   - component: {fileID: 6089623735242081438}
   - component: {fileID: 5943314001839555138}
+  - component: {fileID: -8263203271822821403}
   m_Layer: 0
   m_Name: SlitDome
   m_TagString: Untagged
@@ -96,3 +97,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!208 &-8263203271822821403
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5529970132521480258}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.558, y: 0.518, z: 0.54}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 0
+  m_Center: {x: 0, y: 0.518, z: -0.017}
+  m_TimeToStationary: 0.5

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8805337850621114734}
   - component: {fileID: 2591104427501600370}
   - component: {fileID: -818463159264816830}
+  - component: {fileID: -2875609337023500358}
   m_Layer: 0
   m_Name: Block
   m_TagString: Untagged
@@ -111,3 +112,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 1846653201744175015, guid: 47da2b13d010b4a42909ec2b7d124826, type: 3}
+--- !u!208 &-2875609337023500358
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7065600344117513650}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 2.5, y: 2.5, z: 2.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 0
+  m_Center: {x: 0, y: 2.5, z: 0}
+  m_TimeToStationary: 0.5

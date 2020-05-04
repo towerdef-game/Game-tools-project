@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8973138942074613444}
   - component: {fileID: 5422286532908287106}
   - component: {fileID: 4173603740717021854}
+  - component: {fileID: 8918489286319661050}
   m_Layer: 0
   m_Name: DomeWithBase
   m_TagString: Untagged
@@ -111,3 +112,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -2423763149016875186, guid: 90fa51b4101d8444ab7bf854f83fd3e2, type: 3}
+--- !u!208 &8918489286319661050
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7258158141421312536}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 2.5, y: 1.3750001, z: 2.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 0
+  m_Center: {x: 0, y: 1.3750001, z: 0}
+  m_TimeToStationary: 0.5

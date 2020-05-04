@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 6971110739699165259}
   - component: {fileID: 3711763392653300914}
   - component: {fileID: 7400773959556528385}
+  - component: {fileID: -2293761106792697271}
+  - component: {fileID: 3464690695969385055}
   m_Layer: 0
   m_Name: Slope
   m_TagString: Untagged
@@ -96,3 +98,33 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!208 &-2293761106792697271
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3151960291633537134}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 2.5, y: 2.7500002, z: 2.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 0
+  m_Center: {x: 0, y: 2.7500002, z: 0}
+  m_TimeToStationary: 0.5
+--- !u!64 &3464690695969385055
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3151960291633537134}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5924159088411371066, guid: 405f1e75807ad8442bbb85a53c294515, type: 3}

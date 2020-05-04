@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4112101009944862411}
   - component: {fileID: 7650937916482527794}
   - component: {fileID: 1829123126936019683}
+  - component: {fileID: 2303836717820794838}
   m_Layer: 0
   m_Name: Dishpivot
   m_TagString: Untagged
@@ -96,3 +97,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!64 &2303836717820794838
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8219422757424731886}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2001007463727224436, guid: 4af672453f932bc49b933d480bd1632e, type: 3}

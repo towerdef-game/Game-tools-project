@@ -8,13 +8,14 @@ public class GameManager : MonoBehaviour
  
     public static int Rounds = 0;
     private bool gameEnd = false;
-  //  public SceneFader SceneFader;
-
-  //  public SceneFader sceneFader;
+    public GameObject DeathUI;
+    public GameObject WinUI;
+   // public GameObject player;
+  
  
     void Start()
     {
-
+      
     }
      
 
@@ -23,22 +24,23 @@ public class GameManager : MonoBehaviour
     {
         if (gameEnd)
             return;
-       if (character.health <= 0 )
+        if (character.health <= 0) 
         {
-            GameOver(); 
-        } 
+            GameOver();
+        }
     }
 
     public void GameOver()
     {
         gameEnd = true;
-        SceneManager.LoadScene("Lose");
-       // SceneFader.FadTo("Lose");
+     //   SceneManager.LoadScene("Lose");
+        DeathUI.SetActive(true);
+     
     }
 
    public void WinLevel()
     {
-        
+        WinUI.SetActive(true);  
      
     }
 }

@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 1407723006159991603}
   - component: {fileID: 5443984145677675924}
   - component: {fileID: -1628817218624123876}
+  - component: {fileID: 4817088684700886146}
+  - component: {fileID: -5997785536214027469}
   m_Layer: 0
   m_Name: Arches
   m_TagString: Untagged
@@ -111,3 +113,31 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 3673722810935237965, guid: 22d6d4b4b19385b47a24337c40596759, type: 3}
+--- !u!208 &4817088684700886146
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 843838414395377647}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 2.5, y: 2.5, z: 2.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 0
+  m_Center: {x: 0, y: 2.5, z: 0}
+  m_TimeToStationary: 0.5
+--- !u!114 &-5997785536214027469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 843838414395377647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ad2b10bfa075dc488a0800e4061e720, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

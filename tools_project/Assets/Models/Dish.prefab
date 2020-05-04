@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6911686592902200804}
   - component: {fileID: 925409722747060509}
   - component: {fileID: 3062759664837343562}
+  - component: {fileID: -6821095523801915144}
   m_Layer: 0
   m_Name: Dish
   m_TagString: Untagged
@@ -96,3 +97,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!208 &-6821095523801915144
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1507405366883399105}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 4.3910003, y: 1.381, z: 4.3910003}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 0
+  m_Center: {x: 0, y: 1.641, z: 0}
+  m_TimeToStationary: 0.5
