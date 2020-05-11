@@ -10,7 +10,7 @@ public class character : MonoBehaviour
     public float jumpSpeed = 1.0F;
     public float gravity = 20.0F;
     public static int health = 5;
-    
+    public CharacterController controller;
     private Vector3 moveDirection = Vector3.zero;
     public static int ammo = 5;
     public GameObject bullet;
@@ -22,7 +22,7 @@ public class character : MonoBehaviour
 
     void Start()
     {
-        
+        controller = GetComponent<CharacterController>();
         heal = GameObject.Find("Health"). GetComponent<TextMeshProUGUI>();
     }
     void Update()
@@ -34,7 +34,7 @@ public class character : MonoBehaviour
             shoot();
            
         }
-        CharacterController controller = GetComponent<CharacterController>();
+        //CharacterController controller = GetComponent<CharacterController>();
         if (controller.isGrounded)
         {
             
@@ -49,7 +49,8 @@ public class character : MonoBehaviour
         if (health <= 0)
         {
             Debug.Log("YOUR DEAD");
-           // gamemanager.WinLevel();
+            // gamemanager.WinLevel();
+            controller.enabled = false;
         }
 
         moveDirection.y -= gravity * Time.deltaTime;

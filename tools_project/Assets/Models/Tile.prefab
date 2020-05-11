@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 1480017098226658904}
   - component: {fileID: 5167487904309973665}
   - component: {fileID: 3147907797448873725}
-  - component: {fileID: 3159529944818646282}
+  - component: {fileID: -4532078652517659116}
   m_Layer: 0
   m_Name: Tile
-  m_TagString: Untagged
+  m_TagString: building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -89,16 +89,16 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6884399446828000893}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 5
+  m_Drag: 5
+  m_AngularDrag: 5
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &3159529944818646282
-MeshCollider:
+--- !u!65 &-4532078652517659116
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -107,7 +107,6 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 5062246478642505140, guid: 831c4d74625d5774d9b4cd4f9652d18c, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 4.9999995, y: 0.50000006, z: 4.9999995}
+  m_Center: {x: 0, y: 0.25000003, z: 0}

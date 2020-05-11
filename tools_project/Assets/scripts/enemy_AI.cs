@@ -8,10 +8,12 @@ public class enemy_AI : MonoBehaviour
     public float Health = 2f;
     public GameObject player;
     public GameObject ammo;
+    public GameObject wave;
     public NavMeshAgent brain;
     // Start is called before the first frame update
     void Start()
     {
+       // wave = GameObject.Find
         brain = GetComponent<NavMeshAgent>();
         player = GameObject.FindGameObjectWithTag("Player");
     }
@@ -28,9 +30,10 @@ public class enemy_AI : MonoBehaviour
     }
     void die()
     {
+        waveSpawner.Enemiesalive--;
         Destroy(this.gameObject);
         Instantiate(ammo.transform, transform.position, transform.rotation);
-        waveSpawner.Enemiesalive--;
+        
     }
 
     void OnTriggerEnter(Collider other)

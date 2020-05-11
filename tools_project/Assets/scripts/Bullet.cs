@@ -5,8 +5,6 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public float bulletspeed;
-    private GameObject target;
-    private GameObject player;
     public float damage = 1f;
   
 
@@ -19,12 +17,16 @@ public class Bullet : MonoBehaviour
     {
 
         if (other.gameObject.tag == "enemy")
-        {
-            target = other.gameObject;
+        {       
             other.gameObject.GetComponent<enemy_AI>().Health = -damage;     
             Destroy(this.gameObject);
         }
-      
+        if (other.gameObject.tag == "building")
+        {
+            other.gameObject.GetComponent<buildinghealth>().Health = -damage;
+            Destroy(this.gameObject);
+        }
+
         if (other.gameObject)
         {
             Destroy(this.gameObject);

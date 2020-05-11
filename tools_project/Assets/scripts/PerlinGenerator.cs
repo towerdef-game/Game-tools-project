@@ -15,9 +15,6 @@ public class PerlinGenerator : MonoBehaviour
     public int perlinGridStepSizeX = 4;
     public int perlinGridStepSizeY = 4;
 
-  //  public bool visualizeGrid = false;
-    private GameObject visualizationCube;
-    private float visualizationHeightScale = 5f;
     private RawImage visualizationUI;
 
 
@@ -38,10 +35,7 @@ public class PerlinGenerator : MonoBehaviour
     public void Generate()
     {
         GenerateNoise();
-     //   if (visualizeGrid)
-      //  {
-       //     VisualizeGrid();
-      //  }
+     
     }
 
     void GenerateNoise()
@@ -102,9 +96,6 @@ public class PerlinGenerator : MonoBehaviour
     
 
 
-    public void SetNoiseScaleFromSlider(Slider slider)
-    {
-        noiseScale = slider.value;
-    }
+ 
 
 }

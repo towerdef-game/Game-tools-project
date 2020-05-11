@@ -48,4 +48,4 @@ MonoBehaviour:
   prefabToSpawn: {fileID: 7844566067206972748, guid: fc245e967227ed248b8d5472cd85dc1d,
     type: 3}
   gridOrigin: {x: 0, y: 0, z: 0}
-  Distancebetweenbuildings: 5
+  Distancebetweenbuildings: 6

@@ -8,7 +8,7 @@ public class GridSpawner : MonoBehaviour
     public int BulidngsongridX = 4;
     public int BuildingsongridZ = 4;
     public GameObject prefabToSpawn;
-    public Vector3 gridOrigin = Vector3.zero;
+    public Vector3 Gridspawnpoint = Vector3.zero;
     public float Distancebetweenbuildings = 2f;
   //  public bool generateOnEnable;
 
@@ -34,7 +34,7 @@ public class GridSpawner : MonoBehaviour
             for (int z = 0; z < BuildingsongridZ; z++)
             {
                 GameObject clone = Instantiate(prefabToSpawn, 
-                    transform.position + gridOrigin + new Vector3(Distancebetweenbuildings * x, 0, Distancebetweenbuildings * z), transform.rotation);
+                    transform.position + Gridspawnpoint + new Vector3(Distancebetweenbuildings * x, 0, Distancebetweenbuildings * z), transform.rotation);
                 clone.transform.SetParent(this.transform);
             }
         }
