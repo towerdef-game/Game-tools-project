@@ -17,7 +17,7 @@ public class GridSpawner : MonoBehaviour
     {
       
             Generate();
-        // of some reason unless this generate function and the generate from my generated ObjectControl script it wont generate the buildings at all
+       
     }
 
     public void Generate()
