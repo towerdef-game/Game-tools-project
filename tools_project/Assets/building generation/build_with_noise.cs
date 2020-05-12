@@ -5,7 +5,8 @@ using UnityEngine;
 public class build_with_noise : MonoBehaviour
 {
     public int Max_amount_of_peices = 20;
-    public float perlin_multiplier = 2f;
+   
+
 
     public int min_variation_of_pieces = 3;
     public int Max_variation_of_pieces = 3;

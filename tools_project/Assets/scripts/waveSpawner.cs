@@ -40,8 +40,6 @@ public class waveSpawner : MonoBehaviour
         }
 
         countdown -= Time.deltaTime;
-
-    //    CountDownTimer.text = Mathf.Round(countdown).ToString();
     }
 
   IEnumerator SpawnWave()
@@ -67,7 +65,7 @@ public class waveSpawner : MonoBehaviour
     private void EnemySpawn(GameObject enemy)
     {
         Instantiate(enemy, EnemySpawnPoint.position, EnemySpawnPoint.rotation);
-     //   Enemiesalive++;
+
     }
 
 
