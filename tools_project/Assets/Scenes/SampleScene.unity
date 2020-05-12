@@ -774,7 +774,7 @@ Transform:
   m_LocalScale: {x: 195.261, y: 18.17, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &705507993
 GameObject:
@@ -1079,7 +1079,7 @@ Transform:
   m_LocalScale: {x: 195.261, y: 18.17, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1157405978
 GameObject:
@@ -1092,7 +1092,7 @@ GameObject:
   - component: {fileID: 1157405980}
   - component: {fileID: 1157405979}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Grid spawner (building generation)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1110,8 +1110,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 709a8cfa2f657b44990680bd1cd576f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BulidngsongridX: 4
-  BuildingsongridZ: 4
+  Bulidngs_on_grid_X: 4
+  Buildings_on_grid_Z: 4
   prefabToSpawn: {fileID: 3186048705566486049, guid: 69c4016b4a693844a9214551961d51d9,
     type: 3}
   Gridspawnpoint: {x: -70, y: 0, z: -70}
@@ -1129,6 +1129,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1854222629}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1288576803
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1288576804}
+  m_Layer: 0
+  m_Name: 'building generation below '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1288576804
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1288576803}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -13.7, y: 8, z: 43.8}
+  m_LocalScale: {x: 195.26106, y: 18.17, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1298293030
 GameObject:
@@ -1158,7 +1188,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1322879295
 GameObject:
@@ -1534,7 +1564,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1508472891
 GameObject:
@@ -2074,7 +2104,7 @@ GameObject:
   - component: {fileID: 1854222630}
   - component: {fileID: 1854222631}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: Plane (has perlin generator)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2154,7 +2184,7 @@ Transform:
   m_Children:
   - {fileID: 1157405980}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1854222630
 MonoBehaviour:
@@ -2296,7 +2326,7 @@ Transform:
   m_LocalScale: {x: 195.261, y: 18.17, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1963019278
 GameObject:
@@ -2480,7 +2510,7 @@ Transform:
   m_LocalScale: {x: 195.261, y: 18.17, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2011657547
 GameObject:
@@ -2496,7 +2526,7 @@ GameObject:
   - component: {fileID: 2011657551}
   - component: {fileID: 2011657552}
   m_Layer: 0
-  m_Name: 'gamemanager '
+  m_Name: 'gamemanager (generate buildings component) '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2528,7 +2558,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2011657550
 MonoBehaviour:
@@ -2697,7 +2727,7 @@ Transform:
   m_Children:
   - {fileID: 963194228}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2063011341
 MonoBehaviour:
@@ -2832,7 +2862,7 @@ RectTransform:
   - {fileID: 68119889}
   - {fileID: 1963019279}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
