@@ -43,9 +43,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 709a8cfa2f657b44990680bd1cd576f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BulidngsongridX: 4
-  BuildingsongridZ: 4
+  Bulidngs_on_grid_X: 4
+  Buildings_on_grid_Z: 3
   prefabToSpawn: {fileID: 7844566067206972748, guid: fc245e967227ed248b8d5472cd85dc1d,
     type: 3}
-  gridOrigin: {x: 0, y: 0, z: 0}
+  Gridspawnpoint: {x: 0, y: 0, z: 0}
   Distancebetweenbuildings: 6

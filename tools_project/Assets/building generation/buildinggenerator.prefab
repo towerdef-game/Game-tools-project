@@ -49,10 +49,10 @@ MonoBehaviour:
   baseParts:
   - {fileID: 7065600344117513650, guid: bf368e0eea9ce854aa7fcafebb0a5056, type: 3}
   - {fileID: 6884399446828000893, guid: 2473e044efea5ea4d91b8e9188fb8b2c, type: 3}
-  middle_pieces:
   - {fileID: 843838414395377647, guid: 6efd2581282e7d34d8aa1d0b6ba8c49d, type: 3}
-  - {fileID: 7065600344117513650, guid: bf368e0eea9ce854aa7fcafebb0a5056, type: 3}
+  middle_pieces:
   - {fileID: 7180226575554856106, guid: 2ec471c2a157b24488df4c6a8379f242, type: 3}
+  - {fileID: 7065600344117513650, guid: bf368e0eea9ce854aa7fcafebb0a5056, type: 3}
   Roofs:
   - {fileID: 3151960291633537134, guid: d33de224f485a9e4e9657914b1491bd4, type: 3}
   - {fileID: 7258158141421312536, guid: 18f04b18971af894fbc3304232ddfdeb, type: 3}
