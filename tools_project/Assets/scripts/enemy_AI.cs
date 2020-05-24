@@ -72,6 +72,10 @@ public class enemy_AI : MonoBehaviour
         {
             character.health--;
         }
+        if(other.gameObject.tag == "building")
+        {
+            die();
+        }
     }
 
     void OnDrawGizmosSelected()
