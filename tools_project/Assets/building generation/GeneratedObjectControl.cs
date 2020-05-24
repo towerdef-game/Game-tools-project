@@ -8,7 +8,7 @@ public class GeneratedObjectControl : MonoBehaviour
 
     public static GeneratedObjectControl instance;
     public List<GameObject> generatedObjects = new List<GameObject>();
-
+  
     public PerlinGenerator perlinGenerator;
     public GridSpawner gridSpawner;
 

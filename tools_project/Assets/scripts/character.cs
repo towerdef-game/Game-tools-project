@@ -1,34 +1,44 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class character : MonoBehaviour
 {
-    
+    private float any;
     public float speed = 6.0F;
     public float jumpSpeed = 1.0F;
     public float gravity = 20.0F;
-    public static int health = 5;
+    public static int health ;
+    public int starthealth = 5;
     public CharacterController controller;
     private Vector3 moveDirection = Vector3.zero;
     public static int ammo = 5;
+    public float bullets;
     public GameObject bullet;
     public GameObject barrel;
     public bool canshoot = true;
     public float rateoffire;
     public GameManager gamemanager;
-    TextMeshProUGUI heal;
+    public TextMeshProUGUI counterammo;
+    public Slider Healthbar;
 
     void Start()
     {
+        
+        health = starthealth;
         controller = GetComponent<CharacterController>();
-        heal = GameObject.Find("Health"). GetComponent<TextMeshProUGUI>();
+        Healthbar = GameObject.Find("Health").GetComponent<Slider>();
+        counterammo = GameObject.Find("Ammo").GetComponent<TextMeshProUGUI>();
+       // Healthbar = GameObject
     }
     void Update()
     {
-      
-        heal.text = health.ToString("Health:"+ health);
+        bullets = ammo;
+        any = health;
+        Healthbar.value = any;
+        counterammo.text = "Ammo: " + bullets;
         if (Input.GetMouseButtonDown(0) && ammo>= 1 && canshoot == true)
         {
             shoot();

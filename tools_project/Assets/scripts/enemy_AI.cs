@@ -10,23 +10,53 @@ public class enemy_AI : MonoBehaviour
     public GameObject ammo;
     public GameObject wave;
     public NavMeshAgent brain;
+    public float shootingdistance;
+   // public bool canshoot;
+    public GameObject eye;
+    public GameObject bullet;
+    private float timebtwnshots;
+    public float starttimebtwnshots;
     // Start is called before the first frame update
     void Start()
     {
        // wave = GameObject.Find
         brain = GetComponent<NavMeshAgent>();
         player = GameObject.FindGameObjectWithTag("Player");
+        timebtwnshots = starttimebtwnshots;
     }
 
     // Update is called once per frame
     void Update()
     {
+        float distancetoenemy = Vector3.Distance(transform.position, player.transform.position);
+        if(distancetoenemy < shootingdistance)
+        {
+            timebtwnshots -= Time.deltaTime;
+            if(timebtwnshots <= 0)
+            {
+                shoot();
+            }
+          //  shoot();
+        }
+        if(distancetoenemy > shootingdistance)
+        {
+            timebtwnshots = starttimebtwnshots;
+        }
+     
+        
+        
+        
         brain.destination = player.transform.position;
         if (Health <= 0)
         {
             die();
             
         }
+    }
+    void shoot()
+    {
+        Instantiate(bullet, eye.transform.position, transform.rotation);
+        timebtwnshots = starttimebtwnshots;
     }
     void die()
     {
@@ -43,5 +73,11 @@ public class enemy_AI : MonoBehaviour
             character.health--;
         }
     }
-   
+
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, shootingdistance);
+
+    }
 }

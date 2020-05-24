@@ -13,8 +13,10 @@ GameObject:
   - component: {fileID: 2547005255118153456}
   - component: {fileID: 1317384494425579435}
   - component: {fileID: 2547883173072989634}
+  - component: {fileID: -5066719448275216278}
+  - component: {fileID: 8013879381947851435}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: ammo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27,7 +29,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2420256029802189904}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.47312045, y: 0.56, z: 18.64}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -92,8 +94,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.1764203, y: 1.0917556, z: 1.2219639}
+  m_Center: {x: -0.0025578141, y: -0.010460973, z: -0.026000023}
 --- !u!114 &2547883173072989634
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -106,3 +108,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1137f7db952262b42b596cededcd608e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &-5066719448275216278
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2420256029802189904}
+  serializedVersion: 2
+  m_Mass: 5
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &8013879381947851435
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2420256029802189904}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}

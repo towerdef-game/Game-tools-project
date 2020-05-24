@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class scene_manaer : MonoBehaviour
 {
+    public GameObject settings;
+    public GameObject startscreen;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,6 +18,17 @@ public class scene_manaer : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
 
+    }
+
+    public void Settings()
+    {
+        settings.SetActive(true);
+        startscreen.SetActive(false);
+    }
+    public void back()
+    {
+        settings.SetActive(false);
+        startscreen.SetActive(true);
     }
    public void Quit()
     {
