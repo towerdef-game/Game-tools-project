@@ -17,7 +17,6 @@ MonoBehaviour:
   damage: 1
   blastraidus: 0
   player: {fileID: 0}
-  target: {x: 0, y: 0, z: 0}
   hitcollider: []
 --- !u!1001 &8214192112067728502
 PrefabInstance:
@@ -143,6 +142,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 187062905018425510, guid: 3797b4bfa01542e4aaea56d3e5e63033, type: 3}
+    - {fileID: 9128031619120883128, guid: 3797b4bfa01542e4aaea56d3e5e63033, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3797b4bfa01542e4aaea56d3e5e63033, type: 3}
 --- !u!1 &5398013824253995441 stripped
 GameObject:

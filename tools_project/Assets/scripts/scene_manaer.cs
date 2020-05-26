@@ -19,7 +19,12 @@ public class scene_manaer : MonoBehaviour
 
 
     }
-
+    public void reload()
+    {
+        SceneManager.LoadScene("Level 1");
+        character.ammo = 5;
+        waveSpawner.Enemiesalive = 0;
+    }
     public void Settings()
     {
         settings.SetActive(true);
